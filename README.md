@@ -1,2 +1,2 @@
 # rims
-R package for IMS Healt company 
+R package for IMS Health company 

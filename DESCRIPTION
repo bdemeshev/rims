@@ -1,0 +1,21 @@
+Package: rims
+Type: Package
+Title: Useful R functions for IMS Health company.
+Version: 0.1
+Date: 2015-06-03
+Author: Boris Demeshev
+Maintainer: Boris Demeshev <boris.demeshev@gmail.com>
+Description: This package contains functions useful for solving frequent
+    practical tasks of IMS Health company.
+Imports:
+    dplyr,
+    ggvis,
+    erer,
+    zoo,
+    reshape2,
+    ggplot2,
+    devtools,
+    stringi,
+    stringr,
+    stringdist
+License: MIT
