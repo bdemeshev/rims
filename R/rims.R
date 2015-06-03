@@ -229,6 +229,7 @@ str_utf2cp <- function(x,backward=FALSE) {
   if (is.character(x) | is.factor(x))
     ans <- str_utf2cp0(x, backward = backward)
   if (is.data.frame(x)) 
+    colnames(ans) <- str_utf2cp0(colnames(ans), backward = backward)
     for (i in 1:ncol(ans)) ans[,i] <- str_utf2cp0(ans[,i], backward = backward)        
   return(ans)
 }
