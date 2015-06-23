@@ -11,6 +11,7 @@ str_translit(x)
 }
 \value{
 transliterated vector
+#
 }
 \description{
 Transliterate cyrillic text

@@ -15,6 +15,7 @@ str_word(x, num = 1, remove.duplicate = TRUE)
 }
 \value{
 data frame of words with numbers
+#
 }
 \description{
 Get specific word from a vector of character sentences

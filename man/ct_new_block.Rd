@@ -15,6 +15,7 @@ ct_new_block(z, ct, max_dist = 1)
 }
 \value{
 additional lines for correspondance table
+#
 }
 \description{
 Create additional correspondance table from user responses and actual correspondance table

@@ -15,6 +15,7 @@ str_sent2words(x, cleanup = TRUE, sep = " ")
 }
 \value{
 data.frame with 3 variables: word, word_n (number of word), sent_n (number of sentence)
+#
 }
 \description{
 Convert vector of sentences to a data.frame of separate words

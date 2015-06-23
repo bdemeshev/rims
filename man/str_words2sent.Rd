@@ -13,6 +13,7 @@ str_words2sent(d, sep = " ")
 }
 \value{
 a vector of sentences
+#
 }
 \description{
 Convert data.frame of separate words to a vector of sentences

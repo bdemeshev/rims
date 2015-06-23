@@ -15,6 +15,7 @@ ct_start(etal_cat, add_original = FALSE, translit = TRUE)
 }
 \value{
 data.frame with basic correspondance table
+#
 }
 \description{
 Create base correspondance table from vector of etalon cathegory names

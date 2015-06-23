@@ -61,7 +61,7 @@ rus2num <- function(x) {
 #' @param x the character vector
 #' @param translit logical whether we transliterate vector into latin
 #' @return standartized character vector
-#' @export
+#' # @export
 #' @examples
 #' str_stand("пРивет!")
 str_stand <- function(z,translit=TRUE) {
@@ -83,7 +83,7 @@ str_stand <- function(z,translit=TRUE) {
 #' @param cleanup logical indicates whether to remove punctuation and some other cleanup
 #' @param sep separator of words, space by default
 #' @return data.frame with 3 variables: word, word_n (number of word), sent_n (number of sentence)
-#' @export
+#' # @export
 #' @examples
 #' str_sent2words(c("привет","Маша, это я, Дубровский"))
 str_sent2words <- function(x, cleanup=TRUE,sep=" ") {
@@ -105,7 +105,7 @@ str_sent2words <- function(x, cleanup=TRUE,sep=" ") {
 #' @param x the data.frame with 3 variables: word, word_n (number of word), sent_n (number of sentence)
 #' @param sep the separator for words, space by default
 #' @return a vector of sentences
-#' @export
+#' # @export
 #' @examples
 #' str_words2sent(str_sent2words(c("привет","Маша, это я, Дубровский")))
 str_words2sent <- function(d,sep=" ") {
@@ -120,7 +120,7 @@ str_words2sent <- function(d,sep=" ") {
 #' 
 #' @param x the vector of sentences
 #' @return a vector of sentences with ordered words
-#' @export
+#' # @export
 #' @examples
 #' str_orderwords(c("привет","Маша, это я, Дубровский"))
 str_orderwords <- function(x, sep=" ") {
@@ -143,7 +143,7 @@ str_orderwords <- function(x, sep=" ") {
 #' @param num the number (numbers) of word, negative numbers mean "from the end of sentence"
 #' @param remove.duplicate logical, indicates whether the same word should be reported once or twice
 #' @return data frame of words with numbers
-#' @export
+#' # @export
 #' @examples
 #' str_word(c("привет","Маша, это я, Дубровский"))
 str_word <- function(x, num=1, remove.duplicate=TRUE) {  
@@ -178,7 +178,7 @@ str_word <- function(x, num=1, remove.duplicate=TRUE) {
 #' 
 #' @param x the vector of cyrillic characters
 #' @return transliterated vector
-#' @export
+#' # @export
 #' @examples
 #' str_translit("привет")
 str_translit <- function(x) {
@@ -246,7 +246,7 @@ str_utf2cp <- function(x,backward=FALSE) {
 #' @param add_original whether we include trivial correspondance etalon <-> etalon
 #' @param translit logical whether we transliterate while standartising responses
 #' @return data.frame with basic correspondance table 
-#' @export
+#' # @export
 #' @examples
 #' ct_start(c("Iphone","Samsung","HTC"))
 ct_start <- function (etal_cat, add_original=FALSE,translit=TRUE) {
@@ -266,7 +266,7 @@ ct_start <- function (etal_cat, add_original=FALSE,translit=TRUE) {
 #' @param z the vector of user responces
 #' @param ct actual correspondance table with in_cat and out_cat variables
 #' @return vector of unmatched user responses
-#' @export
+#' # @export
 #' @examples
 #' ct_unmatched(z,ct)
 ct_unmatched <- function(z,ct) {
@@ -284,7 +284,7 @@ ct_unmatched <- function(z,ct) {
 #' @param ct actual correspondance table
 #' @param max_dist maximum Levenstein distance
 #' @return additional lines for correspondance table
-#' @export
+#' # @export
 #' @examples
 #' ct_new_block(z,ct)
 ct_new_block <- function(z,ct,max_dist=1) {
@@ -322,7 +322,7 @@ ct_new_block <- function(z,ct,max_dist=1) {
 #' 1 is better for finding one-to-one correspondance, 
 #' 2 is better to find many-to-one correspondance
 #' @return pretty correspondance table if you are a lucky guy
-#' @export
+#' # @export
 #' @examples
 #' ct_luckyguy(user_ans,etalon,translit = FALSE)
 #' ct_luckyguy(user_ans,ct_start)

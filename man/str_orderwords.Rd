@@ -11,6 +11,7 @@ str_orderwords(x, sep = " ")
 }
 \value{
 a vector of sentences with ordered words
+#
 }
 \description{
 This function order words in each sentence of a character vector

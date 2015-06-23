@@ -20,6 +20,7 @@ ct_luckyguy(user_ans, etalon, algorithm = 1, ...)
 }
 \value{
 pretty correspondance table if you are a lucky guy
+#
 }
 \description{
 This function tries to create a final correspondance table

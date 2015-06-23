@@ -13,6 +13,7 @@ str_stand(z, translit = TRUE)
 }
 \value{
 standartized character vector
+#
 }
 \description{
 Standartize character vector
